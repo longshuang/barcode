@@ -558,7 +558,7 @@ class DNS1D {
         $k = 0;
         $clen = strlen($code);
         for ($i = 0; $i < $clen; ++$i) {
-            $char = $code{$i};
+            $char = $code[$i];
             if (!isset($chr[$char])) {
                 // invalid character
                 return false;
